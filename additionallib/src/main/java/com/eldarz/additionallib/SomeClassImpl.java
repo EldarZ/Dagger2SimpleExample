@@ -1,14 +1,21 @@
 package com.eldarz.additionallib;
 
+import javax.inject.Inject;
+
 /**
  * Created by ezilberm on 9/7/2017.
  */
 
-public class SomeClassImpl implements SomeClass {
+class SomeClassImpl implements SomeClass {
+    private DependencyClass mDependencyClass;
 
+    @Inject
+    public SomeClassImpl(DependencyClass dependencyClass){
+        mDependencyClass = dependencyClass;
+    }
 
     @Override
     public String getMessage() {
-        return "Production code";
+        return mDependencyClass.getMessage();
     }
 }

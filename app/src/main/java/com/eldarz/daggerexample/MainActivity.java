@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.eldarz.additionallib.SomeClass;
-import com.eldarz.additionallib.SomeClassImpl;
+import com.eldarz.additionallib.SomeClassFactory;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mTextView = (TextView)findViewById(R.id.some_text);
-        SomeClass someClass = new SomeClassImpl();
+        SomeClass someClass = SomeClassFactory.CreateSomeClass(this);
         mTextView.setText(someClass.getMessage());
     }
 }
