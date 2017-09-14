@@ -1,13 +1,9 @@
-package com.eldarz.additionallib;
+package com.eldarz.somemodule;
 
 import javax.inject.Inject;
 
-/**
- * Created by ezilberm on 9/7/2017.
- */
-
 class SomeClassImpl implements SomeClass {
-    private DependencyClass mDependencyClass;
+    private final DependencyClass mDependencyClass;
 
     @Inject
     public SomeClassImpl(DependencyClass dependencyClass){

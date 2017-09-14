@@ -1,12 +1,8 @@
-package com.eldarz.additionallib;
+package com.eldarz.somemodule;
 
 import javax.inject.Singleton;
 
 import dagger.Component;
-
-/**
- * Created by ezilberm on 9/10/2017.
- */
 
 @Singleton
 @Component(modules = { SomeClassModule.class })

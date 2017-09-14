@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 
-    package="com.eldarz.additionallib">
+    package="com.eldarz.somemodule">
 
     <application android:allowBackup="true" android:label="@string/app_name"
         android:supportsRtl="true">

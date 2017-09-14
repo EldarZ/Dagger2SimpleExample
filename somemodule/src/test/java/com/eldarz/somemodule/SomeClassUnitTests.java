@@ -1,4 +1,4 @@
-package com.eldarz.additionallib;
+package com.eldarz.somemodule;
 
 import org.junit.Test;
 

@@ -1,18 +1,13 @@
-package com.eldarz.additionallib;
+package com.eldarz.somemodule;
 
 import android.content.Context;
 
-import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 
-/**
- * Created by ezilberm on 9/10/2017.
- */
-
 @Module
 class DependencyClassModule {
-    private Context mContext;
+    private final Context mContext;
 
     public DependencyClassModule(Context context){
         mContext = context;

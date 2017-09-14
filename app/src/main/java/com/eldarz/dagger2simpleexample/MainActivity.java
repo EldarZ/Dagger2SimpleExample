@@ -4,12 +4,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.eldarz.additionallib.SomeClass;
-import com.eldarz.additionallib.SomeClassFactory;
+import com.eldarz.somemodule.SomeClass;
+import com.eldarz.somemodule.SomeClassFactory;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView mTextView;
+    private TextView mTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

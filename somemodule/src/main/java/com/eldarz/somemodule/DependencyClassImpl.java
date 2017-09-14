@@ -1,13 +1,9 @@
-package com.eldarz.additionallib;
+package com.eldarz.somemodule;
 
 import android.content.Context;
 
-/**
- * Created by ezilberm on 9/10/2017.
- */
-
 class DependencyClassImpl implements DependencyClass {
-    private Context mContext;
+    private final Context mContext;
 
     public DependencyClassImpl(Context context){
         mContext = context;

@@ -1,10 +1,6 @@
-package com.eldarz.additionallib;
+package com.eldarz.somemodule;
 
 import android.content.Context;
-
-/**
- * Created by ezilberm on 9/10/2017.
- */
 
 public class SomeClassFactory {
     public static SomeClass CreateSomeClass(Context context){

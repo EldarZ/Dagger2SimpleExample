@@ -1,1 +1,1 @@
-include ':app', ':additionallib'
+include ':app', ':somemodule'
