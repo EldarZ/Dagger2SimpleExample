@@ -3,7 +3,6 @@ package com.eldarz.additionallib;
 import android.content.Context;
 
 import javax.inject.Singleton;
-
 import dagger.Module;
 import dagger.Provides;
 
@@ -14,12 +13,13 @@ import dagger.Provides;
 @Module
 class DependencyClassModule {
     private Context mContext;
+
     public DependencyClassModule(Context context){
         mContext = context;
     }
+
     @Provides
-    @Singleton
-    DependencyClass provideDependencyClass() {
+    public DependencyClass provideDependencyClass(){
         return new DependencyClassImpl(mContext);
     }
 }

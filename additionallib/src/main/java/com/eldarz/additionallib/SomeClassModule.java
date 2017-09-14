@@ -1,7 +1,5 @@
 package com.eldarz.additionallib;
 
-import javax.inject.Singleton;
-
 import dagger.Module;
 import dagger.Provides;
 
@@ -11,7 +9,6 @@ import dagger.Provides;
 
 @Module(includes = DependencyClassModule.class)
 class SomeClassModule {
-    @Singleton
     @Provides
     public SomeClass provideSomeClass(DependencyClass dependencyClass){
         return new SomeClassImpl(dependencyClass);

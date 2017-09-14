@@ -11,5 +11,5 @@ import dagger.Component;
 @Singleton
 @Component(modules = { SomeClassModule.class })
 interface SomeClassComponent {
-    SomeClass make();
+    SomeClass makeSomeClass();
 }
