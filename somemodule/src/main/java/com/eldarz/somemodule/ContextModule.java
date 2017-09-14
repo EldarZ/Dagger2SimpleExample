@@ -1,7 +1,6 @@
 package com.eldarz.somemodule;
 
 import android.content.Context;
-import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 
@@ -12,7 +11,6 @@ class ContextModule {
         mContext = context;
     }
 
-    @Singleton
     @Provides
     public Context provideContext(){ return mContext; }
 }
