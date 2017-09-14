@@ -1,20 +1,10 @@
 package com.eldarz.somemodule;
 
-import android.content.Context;
-
+import dagger.Binds;
 import dagger.Module;
-import dagger.Provides;
 
-@Module
-class DependencyClassModule {
-    private final Context mContext;
-
-    public DependencyClassModule(Context context){
-        mContext = context;
-    }
-
-    @Provides
-    public DependencyClass provideDependencyClass(){
-        return new DependencyClassImpl(mContext);
-    }
+@Module(includes = ContextModule.class)
+abstract class DependencyClassModule {
+    @Binds
+    public abstract DependencyClass provideDependencyClass(DependencyClassImpl dependencyClass);
 }
